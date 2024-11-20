@@ -1,0 +1,189 @@
+body, header, nav, main, section, aside, footer, li {
+    border: 1px solid rgb(255, 255, 255);
+    margin: 10px;
+    padding: 5px;
+}
+
+/*--- LOGO E BANNER ---*/
+header {
+    border: 1px solid black;
+    display: flex;
+    background-color: rgb(229, 169, 147);
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#logobike {
+    text-align: center;
+    height: 90px;
+    width: 90px;
+    flex-grow: 0;
+    flex-wrap: wrap;
+    
+}
+
+.logo {
+    text-align: left;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
+    margin: 0px;
+    padding: 0px;
+    flex-grow: 0;
+    color: rgb(58, 247, 247);
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+}
+
+
+/*--- NAVBAR E MENU ---*/
+nav {
+    border: 1px solid black;
+    background-color: rgb(229, 169, 147);
+}
+
+div.menu {
+    background-color: rgb(255, 132, 87);
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+}
+div.item {
+    background-color: rgb(58, 247, 247);
+    border: 1px solid black;
+    margin: 1px;
+    padding: 1px;
+    text-align: center;
+    flex: auto;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+}
+
+/*--- ÁREA PRINCIPAL DE CONTEÚDO ----*/
+main {
+    border: 1px solid black;
+    background-color: rgb(229, 169, 147);
+}
+section {
+    border: 1px solid black;
+    background-color: rgb(255, 132, 87);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.postagem {
+    display: inline-block;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+}
+h3 {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    text-align: center;
+}
+h4 {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+img {
+    width: 40%;
+}
+
+
+figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.imagemPostagem {
+    max-width: 150%;
+    min-width: 50%;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 5%;
+}
+
+@media (max-width: 500px) {
+    .imagemPostagem {  
+        min-width: 150%;
+        width: 100%;
+    }
+}
+
+p {
+    text-indent: 1.5em;
+    margin-top: 0;
+    font-family: "Urbanist", sans-serif;
+}
+li, figcaption{
+    font-family: "Urbanist", sans-serif;
+}
+
+.grid {
+    display: grid;
+}
+
+.um {
+    grid-area: um;
+}
+
+.dois {
+    grid-area: dois;
+}
+
+.tres {
+    grid-area: tres;
+}
+
+.quatro {
+    grid-area: quatro;
+}
+
+.cinco {
+    grid-area: cinco;
+}
+
+.seis {
+    grid-area: seis;
+}
+
+.galeriaFotos {
+    grid-template-areas:
+    "um dois tres"
+    "quatro cinco seis"
+    ;
+}
+.item {
+    width: 100%;
+    border: 1px solid black;
+}
+
+
+/*--- ÁREA DO RODAPÉ ---*/
+footer {
+    border: 1px solid black;
+    margin-top: 0px;
+    padding: 30px;
+    padding-bottom: 5px;
+    background-color: rgb(229, 169, 147);
+}
+.textoRodape {
+    text-align: center;
+    text-indent: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+}
